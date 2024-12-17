@@ -1,0 +1,166 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #5a5555;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 24px;
+}
+
+.slider {
+    position: relative;
+    border: 1px solid gainsboro;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    height: 70vh;
+}
+
+.slide {
+    min-width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover; 
+}
+
+.text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+}
+
+.text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.text button {
+    background-color: #000000;
+    padding: 10px 20px;
+    border: 1px solid  rgb(255, 255, 255);
+    cursor: pointer;
+
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+.slider-text {
+    position: fixed;
+    top: 200px;
+    left: 23%;
+    transform: translateX(-50%);
+    text-align: match-parent;
+    color: rgb(0, 0, 0);
+    z-index: 10;
+    background-color: none; 
+    width: 40%;
+    padding: 50px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(227, 7, 7, 0.2);
+}
+
+.slider-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.slider-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.logo {
+    width: 30px;
+    height: 40px ;
+    float: left;
+    margin-right: 370px;
+    border-radius: 10px;
+}
+
+.slider-text button {
+    background-color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+   
+}
+h3 {
+    color: orange;
+}
+a {
+    text-decoration: none;
+}
+option {
+    background-color: none;
+    border: 1px solid none;
+}
+select option {
+    display: inline-block; 
+    border: 1px solid none; 
+    border-radius: 10px; 
+    background: none;
+    text-align: center;
+}
+
+.default-style {
+    
+    color: rgb(250, 253, 255);
+    border: none;
+    font-size: 22px;
+    background: #5a5555;
+
+  }
+li:hover {
+    color: orange;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 1 </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <img src="/img/logo2.jpg" class="logo" >
+            <li><a href="#home">Home  </a></li>
+            <li><a href="#home">About Us </a></li>
+            <li>
+                <select class="default-style" id="">
+                    <option value="">Service</option>
+                    <option value="">Detail Service</option>
+                </select>
+            </li>
+            <li>
+                <select class="default-style" id="">
+                    <option value="">Pages</option>
+                    <option value="">Team</option>
+                    <option value="">News</option>
+                    <option value="">Single Post</option>
+                    <option value="">404 Pages</option>
+                    <option value="">FAQ</option>
+                    <option value="">Pricing</option>
+                </select>
+            </li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><button style="border: 1px solid green; background-color: green; color: aliceblue; width: 100px; height: 40px;">Get Quote </button></li>
+        </ul>
+    </nav>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="/img/img1.webp" >   </div>
+            <div class="slide">
+                <img src="/img/img2.webp" >
+            </div>
+            <div class="slide">
+                <img src="/img/img3.webp" >
+            </div>
+        </div>
+    
+        
+        <div class="slider-text">
+            <h3 ><b>WebAgency--Winbest</b></h3>
+            <h2><B>Developpement Web et Marketting Digital et comptabiliter </B> </h2>
+            <p style="font-size: 20px;"><b>Web agency est la meilleuir dans les dommaine de Developpement marketing Digital
+                 et aussi la comptabiliter . </b></p>
+            <button><B>Besoin d'aide ? Contact Nous </B></button>
+        </div>
+    
+        <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+        <a class="next" onclick="moveSlide(1)">&#10095;</a>
+    </div>   
+
+    <script src="script.js"></script>
+</body>
+</html>
